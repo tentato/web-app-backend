@@ -7,10 +7,11 @@
 
 {% block content %}
   <div class="mycard">
-    <h1>Members</h1>
+    <h1>Blog</h1>
     <ul>
       {% for x in mymembers %}
-        <li onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
+        <!-- <li onclick="window.location = 'details/{{ x.id }}'">{{ x.name }}</li> -->
+        <li onclick="window.location = 'details/{{ x.id }}'">Post {{ x.id }}</li>
       {% endfor %}
     </ul>
   </div>
