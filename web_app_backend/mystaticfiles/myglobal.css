@@ -6,7 +6,7 @@ body {
   color: #585d74;
 }
 .topnav {
-  background-color:#375BDC;
+  background-color:#494949;
   color:#ffffff;
   padding:10px;
 }
@@ -19,7 +19,7 @@ body {
 }
 .mycard {
   background-color: #f1f1f1;
-  background-image: linear-gradient(to bottom, #375BDC, #4D70EF); 
+  background-image: linear-gradient(to bottom, #3f3f3f, #c5af35); 
   background-size: 100% 120px;
   background-repeat: no-repeat;
   margin: 40px auto;
@@ -40,7 +40,7 @@ ul {
 }
 li {
   background-color: #ffffff;
-  background-image: linear-gradient(to right, #375BDC, #4D70EF); 
+  background-image: linear-gradient(to right, #c5af35, #c5af35); 
   background-size: 50px 60px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -55,9 +55,9 @@ li:hover {
   transform: scale(1.1);
 }
 a:link, a:visited {
-  color: #375BDC; 
+  color: #c5af35; 
 }
 .main, .main h1 {
   text-align:center;
-  color:#375BDC;
+  color:#292929;
 }
