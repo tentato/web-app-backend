@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Member
+from .models import Tab
 
-class MemberAdmin(admin.ModelAdmin):
+class TabAdmin(admin.ModelAdmin):
     list_display = ("name", "description",)
   
-admin.site.register(Member, MemberAdmin)
+admin.site.register(Tab, TabAdmin)

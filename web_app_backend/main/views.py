@@ -1,20 +1,20 @@
 from django.http import HttpResponse
 from django.template import loader
-from .models import Member
+from .models import Tab
 
-def members(request):
-  mymembers = Member.objects.all().values()
-  template = loader.get_template('all_members.html')
+def tabs(request):
+  mytabs = Tab.objects.all().values()
+  template = loader.get_template('all_tabs.html')
   context = {
-    'mymembers': mymembers,
+    'mytabs': mytabs,
   }
   return HttpResponse(template.render(context, request))
 
 def details(request, id):
-    mymember = Member.objects.get(id=id)
+    mytab = Tab.objects.get(id=id)
     template = loader.get_template('details.html')
     context = {
-    'mymember': mymember,
+    'mytab': mytab,
     }
     return HttpResponse(template.render(context, request))
 

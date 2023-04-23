@@ -9,7 +9,7 @@
   <div class="mycard">
     <h1>Blog</h1>
     <ul>
-      {% for x in mymembers %}
+      {% for x in mytabs %}
         <!-- <li onclick="window.location = 'details/{{ x.id }}'">{{ x.name }}</li> -->
         <li onclick="window.location = 'details/{{ x.id }}'">Post {{ x.id }}</li>
       {% endfor %}
