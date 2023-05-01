@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  My App
+{% endblock %}
+
+
+{% block content %}
+  <div class="mycard">
+    <h1>Blog</h1>
+    <ul>
+      {% for x in myposts %}
+        <li onclick="window.location = 'post_details/{{ x.id }}'">{{ x.title }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

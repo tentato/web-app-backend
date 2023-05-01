@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block title %}
+  My App
+{% endblock %}
+
+{% block content %}
+    <div class="contactcard">
+        <h1>Skontaktuj się ze mną!</h1>
+        <form method="post">
+            {% csrf_token %}
+            <p>Twoje imię:</p>
+            <input name="name" type="text" class="feedback-input" placeholder="Twoje imię..." />   
+            <p>Twój adres e-mail:</p>
+            <input name="from_email" type="text" class="feedback-input" placeholder="Twój adres e-mail..." />   
+            <p>Temat:</p>
+            <input name="subject" type="text" class="feedback-input" placeholder="Temat..." />   
+            <p>Twoja wiadomość:</p>
+            <textarea name="message" class="feedback-input" placeholder="Twoja wiadomość..."></textarea>
+            <div class="form-actions">
+                <button type="submit">Wyślij wiadomość</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
